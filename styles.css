@@ -1,0 +1,62 @@
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background 0.7s ease;
+}
+
+header {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 3rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1f4068;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #b02a44; /* Cambié a un color compatible con la nueva animación */
+  background-color: #b02a44; 
+  background-color: #16213e;
+}
+
+#mensaje {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+/* Animación para el mensaje */
+@keyframes brillar {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #e94560, 0 0 20px #e94560;
+  }
+  50% {
+    text-shadow: 0 0 20px #f9d423, 0 0 30px #f9d423, 0 0 40px #e94560;
+  }
+}
+
+.animar-mensaje {
+  animation: brillar 1.5s infinite;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
